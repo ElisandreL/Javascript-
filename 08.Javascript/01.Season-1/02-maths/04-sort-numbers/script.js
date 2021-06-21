@@ -7,7 +7,15 @@
     document.getElementById("run").addEventListener("click", () => {
 
         // your code here
-
+        let list = document.getElementById("numbers").value;
+        let total = list.split(",");
+        const points = [];
+        for (let i = 0; i < total.length; i++) {
+            let num = total[i];
+            points.push(Number(num));
+        }
+        points.sort(function(a, b){return a - b});
+        alert(points);
     });
 
 })();
