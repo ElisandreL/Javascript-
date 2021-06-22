@@ -8,6 +8,16 @@
     document.getElementById("run").addEventListener("click", () => {
 
         // your code here
+        let a = document.getElementById("number").value;
+        function factorial(a){
+            if(a == 0 || a == 1){
+                return 1; // les factorielles de 0 et de 1 sont 1
+            } else {
+                return a * factorial(a-1);
+            }
+        }
+        alert(factorial(a));
+
 
     });
 
