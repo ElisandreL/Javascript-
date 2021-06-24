@@ -16,7 +16,21 @@
         "grapes",
         "cherry",
     ];
-
+   
     // your code here
-
+    document.getElementById("run").addEventListener("click", () => {
+     
+            if (fruits.includes('apple')) {
+                console.log('Yes');
+            } else {
+                console.log('No')
+            }
+            /*var apFi = fruits.find(el => el == 'apple');
+            if (apFi == 'apple') {
+                console.log('Yes');
+            } else {
+                console.log('No')
+            }*/
+        
+    })
 })();

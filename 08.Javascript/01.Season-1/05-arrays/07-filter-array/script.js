@@ -81,5 +81,28 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let newAr = [];
+        let defAge = people.forEach(function(people) {
+            if (people.age >= 18) {
+                //console.log(people.firstname + ' ' + people.lastname);
+                newAr.push(people.firstname+ ' ' + people.lastname);
+            }
+        });
+        
+        console.log(newAr);
+    })
+    /*document.getElementById("run").addEventListener("click", () => {
+        
+        let defAge = people.map(function(people) {
+            if (people.age >= 18) {
+                //console.log(people.firstname + ' ' + people.lastname);
+               return people; 
+            } else {
+                people.splice(0, defAge);
+            }
+        });
+        console.log(defAge);
+    })*/
 
 })();
