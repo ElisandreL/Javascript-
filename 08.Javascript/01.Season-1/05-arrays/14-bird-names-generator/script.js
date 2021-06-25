@@ -31,4 +31,51 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+       
+
+       // Générer un nombre aléatoire pour aller chercher l'index
+       var rand = [];
+       function rand12() {
+           return Math.round((Math.random())*12);
+       };
+       function rand11() {
+        return Math.round((Math.random())*11);
+    };
+
+       function randomizer() {
+           for(let i = 0; i < 1; i++) {
+               rand.push(rand12());
+           } return rand;
+       }
+
+       // Définir l'élément grâce à son index
+       
+       var partOne = birds[randomizer()];
+
+       console.log(partOne.name + ' ' + partOne.fem)
+
+       if (partOne.fem == true) {
+        document.getElementById("target").innerHTML = ('La ' + partOne.name);
+       } else {
+        document.getElementById("target").innerHTML = ('Le ' + partOne.name);
+       }
+
+       // Même chose pour la partie 2
+
+       let adj = Array.from(adjectives);
+       console.log(adj)
+
+       function randomiTwo() {
+        for(let i = 0; i < 1; i++) {
+            rand.push(rand11());
+        } return rand;
+    }
+       
+       var parTwo = adj[randomiTwo()];
+       
+       console.log(parTwo);
+
+
+    })
 })();

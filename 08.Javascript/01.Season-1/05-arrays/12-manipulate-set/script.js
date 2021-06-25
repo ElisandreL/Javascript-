@@ -16,4 +16,11 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let moins = fruits.delete("apple");
+        let moiMoins = fruits.delete("cherry");
+        let plus = fruits.add("banana").add("kiwi");
+        //let pluPlus = fruits;
+        console.log(fruits);
+    })
 })();

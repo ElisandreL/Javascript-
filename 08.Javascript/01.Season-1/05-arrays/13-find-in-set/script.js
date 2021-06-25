@@ -15,4 +15,13 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(people.size);
+        let al = people.has("Alexandre");
+        //console.log(al);
+        if(al == true) {
+            console.log("Oui");
+        }
+    })
+    
 })();
