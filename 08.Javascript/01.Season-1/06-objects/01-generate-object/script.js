@@ -3,4 +3,8 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const exo = {lastname: "Laenens", firstname: "Elisandre", age: 24, city: "Tertre", country: "Belgium"};
+        console.log(exo);
+    })
 })();

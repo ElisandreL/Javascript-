@@ -55,27 +55,27 @@
 
        console.log(partOne.name + ' ' + partOne.fem)
 
-       if (partOne.fem == true) {
-        document.getElementById("target").innerHTML = ('La ' + partOne.name);
-       } else {
-        document.getElementById("target").innerHTML = ('Le ' + partOne.name);
-       }
-
        // Même chose pour la partie 2
 
        let adj = Array.from(adjectives);
-       console.log(adj)
+       console.log(adj);
 
+       let rand2 = [];
        function randomiTwo() {
         for(let i = 0; i < 1; i++) {
-            rand.push(rand11());
-        } return rand;
+            rand2.push(rand11());
+        } return rand2;
     }
        
        var parTwo = adj[randomiTwo()];
        
        console.log(parTwo);
 
+       if (partOne.fem == true) {
+        document.getElementById("target").innerHTML = ('La ' + partOne.name + ' ' + parTwo + 'e');
+       } else {
+        document.getElementById("target").innerHTML = ('Le ' + partOne.name + ' ' + parTwo);
+       }
 
     })
 })();
