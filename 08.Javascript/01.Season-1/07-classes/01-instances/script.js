@@ -9,4 +9,9 @@
         }
     }
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+         const chat = new Cat('Skitty', '9 years');
+         const chatBis = new Cat('Pixel', '6 years' );
+         console.log(chat, chatBis)
+    })
 })();
